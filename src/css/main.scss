@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  text-indent: 12px;
+  background: transparent;
+  resize: none;
+  outline: none; /*清除选中效果的默认蓝色边框 */
+  -webkit-appearance: none; /*清除浏览器默认的样式 */
+  line-height: normal;
+}
+
+.layui-m-layerbtn span[yes] {
+  color: #FE9264 !important;
+}
+
+.loading-wrap {
+  width: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-wrap > div {
+  width: 20px;
+  height: 20px;
+  background-color: #FE9264;
+  border-radius: 100%;
+  display: inline-block;
+  animation: action 1.5s infinite ease-in-out;
+  animation-fill-mode: both;
+}
+
+.loading-wrap .point1 {
+  animation-delay: -0.3s;
+}
+
+.loading-wrap .point2 {
+  animation-delay: -0.1s;
+}
+
+@keyframes action {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1.0);
+  }
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 256px;
+  background-color: #FE9264;
+
+  .title-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .cover {
+    width: 290px;
+    height: 170px;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-image: none;
+
+  }
+
+  .title-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+// 展示成绩加载动画
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 600ms;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+// 展示成绩
+.grid-item {
+  background-color: white;
+}
+
+.ui-col-bgc {
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 42px;
+  line-height: 35px;
+}
+
+.ui-align-c {
+  text-align: center;
+}
+
+.ui-align-l {
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /*font-weight: bold;*/
+}
+
+.ui-row-h33 {
+  /*height: 42px;*/
+  line-height: 35px;
+}
+
+.ui-row-h33 {
+  margin-top: 5px;
+}
+
+.reward-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+
+  .content {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 124px;
+    height: 24px;
+    line-height: 24px;
+    align-items: center;
+    color: #ffffff;
+    background-color: #FE9264;
+    border-radius: 12px;
+  }
+}

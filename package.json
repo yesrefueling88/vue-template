@@ -1,0 +1,27 @@
+{
+  "name": "vue-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx webpack-dev-server",
+    "build": "npx webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.2",
+    "style-loader": "^2.0.0",
+    "css-loader": "^5.2.5",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^7.0.3",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^4.5.0",
+    "html-withimg-loader": "^0.1.16",
+    "url-loader": "^4.1.1"
+  }
+}
