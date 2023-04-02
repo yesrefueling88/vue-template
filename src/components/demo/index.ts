@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const template = `
-<div>
+<div class="m-2">
     demo
 </div>
 `;
