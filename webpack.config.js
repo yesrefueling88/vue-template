@@ -7,13 +7,13 @@ function resolve(dir) {
 }
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/main.ts',
   output: {
     filename: 'build.js',
     path: path.resolve(__dirname, 'build'),
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.ts', '.js', '.vue', '.json'],
     alias: {
       vue$: 'vue/dist/vue.esm.js',
       '@': resolve('src'),
@@ -21,12 +21,18 @@ module.exports = {
   },
   module: {
     rules: [
-      //打包css文件
+      // 打包ts文件
+      {
+        test: /\.ts$/,
+        use: ['ts-loader'],
+        exclude: /node_modules/,
+      },
+      // 打包css文件
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
-      //打包scss文件
+      // 打包scss文件
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],

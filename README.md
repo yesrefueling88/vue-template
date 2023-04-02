@@ -1,6 +1,9 @@
 # vue-template
 基于Vue的单页面模板
 
+### 第三版
+* 第二版基础上引入TypeScript
+
 ### 第二版
 * Vue2
 * Vue-Router

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": false, // 严格模式
+    "module": "commonjs", // 编译的代码采用的模块规范
+    "target": "es5", // 编译出的代码采用es的那个版本，
+    "sourceMap": true, // 输出Source Map以方便调试
+    "importHelpers": true, // 减少辅助函数的输出 缩小压缩后的代码体积
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "tslib": ["node_modules/tslib/tslib.d.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts"],
+  "exclude": ["node_modules"] // 不编译下面这些目录中的文件
+}
