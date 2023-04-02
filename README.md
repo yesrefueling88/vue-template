@@ -1,7 +1,16 @@
 # vue-template
 基于Vue的单页面模板
 
-### 项目技术栈
+### 第二版
+* Vue2
+* Vue-Router
+* Vuex
+* Webpack4
+* webpack-dev-server
+* Sass
+* Axios
+
+### 第一版
 * Vue2
 * Webpack4
 * webpack-dev-server
